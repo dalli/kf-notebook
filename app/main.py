@@ -7,7 +7,9 @@ from kubernetes import client, config
 config.load_kube_config()
 apps_api = client.AppsV1Api()
 
+
 app = FastAPI()
+
 
 @app.get("/")
 def read_home():
